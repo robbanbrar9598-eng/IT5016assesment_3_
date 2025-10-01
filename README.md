@@ -105,8 +105,10 @@ for instance:-
  display_requisition:- print out the output
 
  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-Conclusion
-In conclusion, there is a requisition system which is developed by using software principles such as K.I.S.S., D.R.Y., Single Responsibility, and Separation of Concerns, to make the code simpler, more modular. These principles had not only made code better but also increased its reusability and made it more effective.  Every function has its unique quality, and a software principles help to imbrace them
+---------------------------------------------------------------------------------Conclusion---------------------------------------------------------------------
+
+
+In conclusion, there is a requisition system which is developed by using software principles such as K.I.S.S., D.R.Y., Single Responsibility, and Separation of Concerns, to make the code simpler, more modular. These principles had not only made code better but also increased its reusability and made it more effective.  Every function has its unique quality, and software principles help to embrace them
 
 
 
