@@ -78,8 +78,8 @@ In requisition_total(), the total variable accumulates all the prices of items r
 
 
 
-    total = 0                                                        
-    while True:
+       total = 0                                                        
+        while True:
         item = input("Enter item name (or 'done' to finish): ")   
         if item.lower() == "done":
             break                
