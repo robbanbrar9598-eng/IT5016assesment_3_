@@ -97,7 +97,7 @@ def requisitions_total():
 """this function determine approval for requisition status based on total.
     
     Principles implements
-    K.I.S.S: used if.
+    K.I.S.S: used if condition total<500 if greater than it will be pending if below than approved which is simple logic 
     """
 def requisition_approval():                
     date,staff_id,staff_name,requisition_id,total = requisitions_total() 
@@ -151,4 +151,5 @@ def display_requisitions():
 
 
 display_requisitions()
+
 
