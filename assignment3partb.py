@@ -18,9 +18,9 @@ def staff_info():
     requisition_id= 10000              
     while True:
         
-        date=input("enter the date : ")                          
-        staff_id=input("enter the staff id please : ")            
-        staff_name=input("what is your name please enter it : ")
+        date=input("enter the date : ")                          #enter date by staff
+        staff_id=input("enter the staff id please : ")            #enter the id by staff
+        staff_name=input("what is your name please enter it : ")      #enter the name 
         
         # generates unique requisition  id and each time increments when new staff member is added 
         requisition_id +=1        
@@ -151,5 +151,6 @@ def display_requisitions():
 
 
 display_requisitions()
+
 
 
