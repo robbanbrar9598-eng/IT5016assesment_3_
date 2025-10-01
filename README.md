@@ -3,29 +3,42 @@ Assessment
 Name: Robbandeep Singh Brar
 Student ID: 20251168
 
-Overview
+-------------------------------------------------------------------Overview------------------------------------------------------------------------
 
 
 This assignment shows how a simple requisition system for purchasing, which allows the staff member to input details like name, ID, date, price, and make unique ID g for those who input the credentials, and there is  also a calculator, which calculates the total at the end, and displays whether the request is approved or pending. there are four functions staff_info(), requisitions_total(), requisition_approval(), and display_requisitions()
 
 
-function details.
+---------------------------------------------------------------------------function details----------------------------------------------------------
 
 
-In staff_info(), staff member input their data, like name, ID, date, and a requisition increments by 1 if details are entered. There is a while loop so that if another customer needs to add, then they can type yes, if not, then break, say no.
+**In staff_info(), staff member input their data, like name, ID, date, and a requisition increments by 1 if details are entered. There is a while loop so that if another customer needs to add, then they can type yes, if not, then break, say no.
 
 
-requisitions_total().   After entering all the details, the system will prompt you to enter the item name, followed by the price. If the customer has more than one item, only the system will sum the cost of one cylinder. If there are different or multiple options, then it will sum all of them.
+**requisitions_total().   After entering all the details, the system will prompt you to enter the item name, followed by the price. If the customer has more than one item, only the system will sum the cost of one cylinder. If there are different or multiple options, then it will sum all of them.
 
 
-requisition_approval(). This function tells us the status, like approved or pending. if the total price is above 500, it will show pending if it is less than, approved will print the total and status. String and slicing methods are used in this function, and an if statement is also used.
+**requisition_approval(). This function tells us the status, like approved or pending. if the total price is above 500, it will show pending if it is less than, approved will print the total and status. String and slicing methods are used in this function, and an if statement is also used.
 
 
-display_requisitions(). This function collects all the data from the above functions and reports them as a summary.
+**display_requisitions(). This function collects all the data from the above functions and reports them as a summary.
 There are some software design principles applied, like K.I.S.S, Single Responsibility, Separation of Concerns, Clean Code, Open/Closed, Single Responsibility, and D.R.Y
 
 
-Principle Implementation
+----------------------------------------------------------------Principle Implementation-----------------------------------------------------------------
+
+
+1.K.I.S.S (Keep It Simple, Stupid): Simple loops and conditions for clarity
+
+2.D.R.Y (Don’t Repeat Yourself): Reused variables for total calculation
+
+3.Single Responsibility: Each function performs one specific task
+
+4.Separation of Concerns: Input, calculation, and display are handled separately
+
+5.Open/Closed Principle: Approval rules can be easily extended
+
+
 
 
 
