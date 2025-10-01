@@ -39,6 +39,41 @@ There are some software design principles applied, like K.I.S.S, Single Responsi
 5.Open/Closed Principle: Approval rules can be easily extended
 
 
+--------------------------------------------------------------------All Principles--------------------------------------------------------------------------
+
+
+1. K.I.S.S:- In this principle, codes are simple to understand and straightforward. Through this principle, we can stop avoiding unnecessary complexity. How much does the simple code help to understand?
+   there are 2 function in which K.I.S.S is implement. line 23 of caltex, papaura, where the program simply manages  the loop, which avoid other works for example ,
+   in these codes :-
+  #  choice = input("Do you want to add another staff? (yes/no): ").lower()
+  
+        if choice == "yes"  or choice == "no":           #K.I.S.S is used here in simple statement yes/no    
+                            
+                            # break helps to stop the loop from repeatind if staff says no
+                            break
+   
+
+In requisition_total()from 64  lines,  i had simply applied a true statement to keep it simple and break the loop by typing done.
+
+ if item.lower() == "done":
+
+            # stop the loop when type done
+
+            break                
+        
+        The break statement is used there to break the 
+        while loop even if it is true """
+This is simple because if the customer types done they exit the loops.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. D.R.Y :- To avoide the repeating logic and make it into a single position. this will help when a person need to make a change, if D.R.Y principle is applied they would only need to change it from one place only.
+3. 
+
+
+
+
+
 
 
 
