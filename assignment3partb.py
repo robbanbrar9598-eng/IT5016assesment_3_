@@ -97,9 +97,7 @@ def requisitions_total():
 """this function determine approval for requisition status based on total.
     
     Principles implements
-    K.I.S.S
-    Open/Closed( Easy to extend approval rules)
-    Clean Code: Meaningful variable names and structured output.
+    K.I.S.S: used if.
     """
 def requisition_approval():                
     date,staff_id,staff_name,requisition_id,total = requisitions_total() 
@@ -153,3 +151,4 @@ def display_requisitions():
 
 
 display_requisitions()
+
