@@ -12,7 +12,7 @@
 -------------------------------------------------------------------Overview------------------------------------------------------------------------
 
 
-This assignment shows how a simple requisition system for purchasing, which allows the staff member to input details like name, ID, date, price, and make unique ID g for those who input the credentials, and there is  also a calculator, which calculates the total at the end, and displays whether the request is approved or pending. there are four functions staff_info(), requisitions_total(), requisition_approval(), and display_requisitions()
+This assignment shows how a simple requisition system for purchasing, which allows the staff member to input details like name, ID, date, price, and create a unique ID for those who input the credentials, and there is  also a calculator, which calculates the total at the end, and displays whether the request is approved or pending. there are four functions staff_info(), requisitions_total(), requisition_approval(), and display_requisitions()
 
 
 ---------------------------------------------------------------------------function details----------------------------------------------------------
