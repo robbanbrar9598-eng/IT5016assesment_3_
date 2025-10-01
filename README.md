@@ -36,20 +36,20 @@ There are some software design principles applied, like K.I.S.S, Single Responsi
 
 4.Separation of Concerns: Input, calculation, and display are handled separately
 
-5.Open/Closed Principle: Approval rules can be easily extended
+
 
 
 --------------------------------------------------------------------All Principles--------------------------------------------------------------------------
 
 
-1. K.I.S.S:- In this principle, codes are simple to understand and straightforward. Through this principle, we can stop avoiding unnecessary complexity. How much does the simple code help to understand?
-   there are 2 function in which K.I.S.S is implement. line 23 of caltex, papaura, where the program simply manages  the loop, which avoid other works for example ,
-   in these codes :-
+1. K.I.S.S:- In this principle, codes are simple to understand and straightforward. Through this principle, we can stop avoiding unnecessary complexity. If the  code is simple, we understand it more.
+   there are 2 function in which K.I.S.S is implement. line 23 of caltex, papaura, where the program simply manages  the loop, which avoids other work, for example,
+   in these codes:-
   #  choice = input("Do you want to add another staff? (yes/no): ").lower()
   
-        if choice == "yes"  or choice == "no":           #K.I.S.S is used here in simple statement yes/no    
+        if choice == "yes"  or choice == "no":           #K.I.S.S is used here in a simple statement yes/no    
                             
-                            # break helps to stop the loop from repeatind if staff says no
+                            # break helps to stop the loop from repeating if staff says no
                             break
    
 
@@ -63,17 +63,50 @@ In requisition_total()from 64  lines,  i had simply applied a true statement to 
         
         The break statement is used there to break the 
         while loop even if it is true """
-This is simple because if the customer types done they exit the loops.
+This is simple because if the customer types done, they exit the loops.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-2. D.R.Y :- To avoide the repeating logic and make it into a single position. this will help when a person need to make a change, if D.R.Y principle is applied they would only need to change it from one place only.
-3. 
+2. D.R.Y:- To avoid the repeating logic and make it into a single position. this will help when a person need to make a change, if D.R.Y principle is applied, they would only need to change it from one place only.
+In requisition_total(), the total variable accumulates all the prices of items repeatedly entered by the staff. This helps to avoid rewriting additional code multiple times
 
 
 
+    total = 0                                                        
+    while True:
+        item = input("Enter item name (or 'done' to finish): ")   
+        if item.lower() == "done":
+            break                
+        price = int(input(f"Enter price of {item}: $"))   
+                   total += price
 
 
+      
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------          
+3. Single Responsibility:- This principle tells that a class or module should only have 1 responsibility, meaning it performs only one function. This helps to avoid the different concerns and makes it more effective. 
+
+Single Responsibility is implemented in multiple functions, like:-
+staff_info()
+requisitions_total()
+display_requisitions()
+These function has their own purposes.
+
+staff_info() collects only data from staff members.
+requisitions_total() only sums up all the items staff enter.
+display_requisitions() only displays the summary or report.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4. Separation of Concerns:- In this principle, the program is divided into different sections, which makes it easy to handle and secure from overlapping responsibilities. This helps to make the code more readable.
+
+for instance:-
+ staff_info:- only handels input from staff.
+ requisition _total:- only performs calculations 
+ display_requisition:- print out the output
+
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Conclusion
+In conclusion, there is a requisition system which is developed by using software principles such as K.I.S.S., D.R.Y., Single Responsibility, and Separation of Concerns, to make the code simpler, more modular. These principles had not only made code better but also increased its reusability and made it more effective.  Every function has its unique quality, and a software principles help to imbrace them
 
 
 
